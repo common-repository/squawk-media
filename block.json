@@ -1,0 +1,29 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "mewebdev/mewebdev-squawk-media",
+    "category": "common",    
+    "description": "Assign custom CSS classes directly to your media or make your media responsive and adjust borders by tweaking a few settings.",
+    "title": "Squawk Media",
+    "editorScript": "file:./build/index.js",
+    "editorStyle": "file:./build/index.css",
+    "style": "file:./build/style-index.css",
+    "attributes": {
+      "mediaUrl": {"type": "string", "default": ""},
+      "settingsUnit": {"type": "string", "default": "rem"},
+      "border": {"type": "object", "default": {"color": "#CCCCCC", "style": "solid", "width": "0px"}},
+      "classes": {"type": "string", "default": ""},
+      "borderRadius": {"type": "string", "default": ""},
+      "borderTopRightRadius": {"type": "number", "default": 0},
+      "borderBottomRighRadius": {"type": "number", "default": 0},
+      "borderBottomLeftRadius": {"type": "number", "default": 0},
+      "borderTopLeftRadius": {"type": "number", "default": 0},
+      "alt": {"type": "string", "default": ""},
+      "isResponsive": {"type": "boolean", "default": true},
+      "type": {"type": "string", "default": ""},
+      
+      "autoplay": {"type": "boolean", "default": true},
+      "controls": {"type": "boolean", "default": true},
+      "muted": {"type": "boolean", "default": true}
+    }
+  }
